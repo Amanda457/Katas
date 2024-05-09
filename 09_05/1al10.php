@@ -33,4 +33,18 @@ while ($num4 != 10){
     ++$num4;
     echo $num4.PHP_EOL;
 }
+
+echo " Manera 5" . PHP_EOL;
+
+function sumarHastaDiez ($numero):void {
+    do {
+        if ($numero <10){
+        echo $numero . PHP_EOL;
+         $numero++;
+    } 
+
+}while ($numero <=11);
+}
+sumarHastaDiez(1);
+
 ?>
