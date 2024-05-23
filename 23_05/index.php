@@ -32,7 +32,7 @@ function imprimirCalculs(int $num): string{
     return $missatge = "Numero: " . $num . PHP_EOL . $quadrat . $cub . $factorial . PHP_EOL;
 }
 
-function openAndWriteCalc ($num){
+function openAndWriteCalc (int $num) : void{
     $calculs = imprimirCalculs($num);
     $fp = fopen("calculs_$num.txt", "w");
     fwrite($fp, $calculs);
