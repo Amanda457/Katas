@@ -9,11 +9,13 @@ $arrayTexto = explode(" ", $contenido);
 
 function imprimirPalabrasQueContienenLetras(array $arrayTexto): void
 {
-    $caracter = "t";
+    $caracter = "T";
+    $caracter = strtolower($caracter);
     echo "Palabras que contienen la letra ".$caracter.PHP_EOL;
     
     foreach ($arrayTexto as $palabra) {
-        if (strpos($palabra, $caracter)) {
+        $palabraBase = strtolower( $palabra);
+        if (strpos($palabraBase, $caracter)!==false) {
             echo $palabra . PHP_EOL;
         }
     }
@@ -32,5 +34,5 @@ function imprimirPalabrasQueInicianConVocal(array $arrayTexto): void{
 imprimirPalabrasQueContienenLetras($arrayTexto);
 imprimirPalabrasQueInicianConVocal($arrayTexto);
 
-fclose($archivo);
+//fclose($archivo);
 ?>
