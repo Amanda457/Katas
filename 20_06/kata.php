@@ -10,25 +10,28 @@ function convertStringToArray (string $string) : array {
     return $newArray;
 }
 
-function countParenthesisLeft (array $array):int{
-    $countLeft=0;
-    
-    for($i=0; $i<count($array); $i++){
-        if( $array[$i] == '('){
-            ++$countLeft;
+function countParenthesis (array $array, string $character) : int {
+    $quantity = 0;
+
+        foreach ($array as $posicion) {
+            if ($posicion == $character){
+                ++$quantity;
+            }
         }
-    }
+    return $quantity;
+}
+
+
+function countParenthesisLeft (array $array) : int{
+   
+    $countLeft = countParenthesis($array, "(");
+  
     return $countLeft;
 }
 
 function countParenthesisRight (array $array):int{
-    $countRight=0;
-    
-    for($i=0; $i<count($array); $i++){
-        if( $array[$i] == ')'){
-            ++$countRight;
-        }
-    }
+    $countRight = countParenthesis($array, ")");
+  
     return $countRight;
 }
 
