@@ -13,8 +13,9 @@ class Guerrer extends Jugador
         echo "Yo te rajo con mi " . $this->arma . " . AAAAAAAAHHH!".PHP_EOL;
     }
 
-    public function correr():void {
-        echo "Hacia donde quieres correr? <br> 1. Arriba <br> 2. Abajo <br> 3. Derecha <br> 4. Izquierda".PHP_EOL;
+    public function correr() : void {
+        $this->moverse(2);
+       /* echo "Hacia donde quieres correr? <br> 1. Arriba <br> 2. Abajo <br> 3. Derecha <br> 4. Izquierda".PHP_EOL;
         $direccion = readline();
         
         switch ($direccion) {
@@ -50,7 +51,7 @@ class Guerrer extends Jugador
                     echo "Error, deja de correr, tu posición actual es (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
                 }
                 break;
-           }
+           }*/
     }
 }
 ?>

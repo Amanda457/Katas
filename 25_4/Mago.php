@@ -23,10 +23,10 @@ class Mago extends Jugador{
         foreach ($this->hechizos as $hechizo) {
             if ($hechizo == $hechizoBuscado){
                 echo "Abracadabra, ". $hechizoBuscado. PHP_EOL;
+            } else {
+                echo "Tendré que repasarme la enciclopedia de hechizos...<br> ";
             }
         }
-                
     }
-
 }
 ?>
