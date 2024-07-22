@@ -6,8 +6,8 @@ class Mago extends Jugador{
     public array $hechizos;
 
 
-    public function __construct(string $nickname, int $x, int $y){
-        parent::__construct($nickname, $x, $y);
+    public function __construct(string $nickname){
+        parent::__construct($nickname);
         $this->hechizos = array();
         }
 
@@ -24,7 +24,7 @@ class Mago extends Jugador{
             if ($hechizo == $hechizoBuscado){
                 echo "Abracadabra, ". $hechizoBuscado. PHP_EOL;
             } else {
-                echo "Tendré que repasarme la enciclopedia de hechizos...<br> ";
+                echo "Tendré que repasarme la enciclopedia de hechizos... ".PHP_EOL;
             }
         }
     }

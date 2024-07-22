@@ -19,4 +19,5 @@ $mago1-> lanzarHechizo("locatis");
 $arquero1->lanzarFlecha();
 $guerrero1->atacar();
 $guerrero1->correr();
+$guerrero1->correr();
 ?>

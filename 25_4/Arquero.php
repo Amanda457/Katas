@@ -4,8 +4,8 @@ class Arquero extends Jugador{
     public string $arco;
     public int $flechas;
 
-    public function __construct(string $nickname, int $x, int $y, string $arco, int $flechas){
-        parent::__construct($nickname, $x, $y);
+    public function __construct(string $nickname, string $arco, int $flechas){
+        parent::__construct($nickname);
         $this->arco = $arco;
         $this->flechas = $flechas;
     }

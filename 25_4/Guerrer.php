@@ -4,8 +4,8 @@ class Guerrer extends Jugador
 {
     public string $arma;
 
-    public function __construct(string $nickname, int $x, int $y, string $arma){
-        parent::__construct($nickname, $x, $y);
+    public function __construct(string $nickname, string $arma){
+        parent::__construct($nickname);
         $this->arma = $arma;
     }
 
@@ -15,43 +15,6 @@ class Guerrer extends Jugador
 
     public function correr() : void {
         $this->moverse(2);
-       /* echo "Hacia donde quieres correr? <br> 1. Arriba <br> 2. Abajo <br> 3. Derecha <br> 4. Izquierda".PHP_EOL;
-        $direccion = readline();
-        
-        switch ($direccion) {
-            case '1':
-                if ($this->posicionVertical <7){
-                    $this->posicionVertical= $this->posicionVertical + 2;
-                    echo " Ahora estas en (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                } else{
-                    echo "Error, prueba a caminar, tu posición actual es (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                }
-                break;
-            case '2':
-                if ($this->posicionVertical >2){
-                    $this->posicionVertical= $this->posicionVertical - 2;
-                    echo " Ahora estas en (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                } else{
-                    echo "Error, no puedes bajar corriendo así, tu posición actual es (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                }
-                break;
-            case '3':
-                if ($this->posicionHorizontal <7){
-                    $this->posicionHorizontal=  $this->posicionHorizontal + 2;
-                    echo " Ahora estas en (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                } else{
-                    echo "Error, no corras tanto, pueba caminar, tu posición actual es (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                }
-                break;
-            case '4':
-                if ($this->posicionHorizontal >2){
-                    $this->posicionHorizontal=  $this->posicionHorizontal - 2;
-                    echo " Ahora estas en (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                } else{
-                    echo "Error, deja de correr, tu posición actual es (".$this->posicionVertical. ",".$this->posicionHorizontal.").<br>";
-                }
-                break;
-           }*/
     }
 }
 ?>
